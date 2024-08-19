@@ -30,5 +30,5 @@ This is my personal portfolio website built to highlight my skills and projects.
 - **ScrollReveal**: For scroll animations.
 ## Contact
 For any inquiries or feedback, please reach out to me:
-- Email: lohith_marneni@srmap.edu.in
+- Email: lohith.marneni@gmail.com
 - Phone: +91 7396552212
