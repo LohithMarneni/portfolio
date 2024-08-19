@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/images//favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/images//favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/images//site.webmanifest" />
+
+    <title>Lohith Marneni</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav id="header">
+        <div class="nav-logo">
+          <p class="nav-name">Lohith Marneni</p>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+          <ul class="nav_menu_list">
+            <li class="nav_list">
+              <a href="#home" class="nav-link active-link">Home</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#about" class="nav-link">About</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#projects" class="nav-link">Projects</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#contact" class="nav-link">Contact</a>
+              <div class="circle"></div>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-button">
+          <button class="btn" onclick="downloadResume()">
+            Download CV <i class="uil uil-file-alt"></i>
+          </button>
+        </div>
+        <div class="nav-menu-btn">
+          <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+      <main class="wrapper">
+        <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+              <span>Lohith Marneni</span>
+            </div>
+            <div class="featured-name">
+              <p>I'm <span class="typedText"></span></p>
+            </div>
+            <div class="featured-text-info">
+              <p>
+                Skilled Full-Stack Developer with a Passion for Creating
+                Efficient Web Solutions and an Enthusiast for Machine Learning.
+              </p>
+            </div>
+            <div class="featured-text-btn">
+              <button class="btn" onclick="downloadResume()">
+                Download CV <i class="uil uil-file-alt"></i>
+              </button>
+            </div>
+            <div class="social_icons">
+              <div class="icon">
+                <a href="https://www.instagram.com/lohith_marneni/"
+                  ><i class="uil uil-instagram"></i
+                ></a>
+              </div>
+              <div class="icon">
+                <a href="https://www.linkedin.com/in/lohith-marneni/"
+                  ><i class="uil uil-linkedin-alt"></i
+                ></a>
+              </div>
+              <div class="icon">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100086997967476"
+                  ><i class="uil uil-dribbble"></i
+                ></a>
+              </div>
+              <div class="icon">
+                <a href="https://github.com/LohithMarneni"
+                  ><i class="uil uil-github-alt"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+              <img src="assets/images/avatar.png" alt="avatar" />
+            </div>
+          </div>
+          <div class="scroll-icon-box">
+            <a href="#about" class="scroll-btn">
+              <i class="uil uil-mouse-alt"></i>
+              <p>Scroll Down</p>
+            </a>
+          </div>
+        </section>
+        <section class="section" id="about">
+          <div class="top-header">
+            <h1>About Me</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="about-info">
+                <h3>My introduction</h3>
+                <p>
+                  I'm a skilled full-stack developer with experience in creating
+                  dynamic web applications using modern frameworks. Proficient
+                  in PHP and SQL, I streamline processes through automated
+                  systems. Currently exploring Machine Learning and expanding my
+                  expertise into the MERN stack.
+                </p>
+                <div class="about-btn">
+                  <button class="btn" onclick="downloadResume()">
+                    Download CV<i class="uil uil-import"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="skills-box">
+                <div class="skills-header">
+                  <h3>Coding Languages</h3>
+                </div>
+                <div class="skills-list">
+                  <span>C++</span>
+                  <span>Python</span>
+                  <span>C</span>
+                  <span>SQL</span>
+                </div>
+              </div>
+              <div class="skills-box">
+                <div class="skills-header">
+                  <h3>Web Development</h3>
+                </div>
+                <div class="skills-list">
+                  <span>PHP</span>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>React</span>
+                  <span>Bootstrap</span>
+                  <span>MySQL</span>
+                </div>
+              </div>
+              <div class="skills-box">
+                <div class="skills-header">
+                  <h3>Data Analysis</h3>
+                </div>
+                <div class="skills-list">
+                  <span>Power BI</span>
+                  <span>Pandas</span>
+                  <span>Numpy</span>
+                  <span>Matplotlib</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="projects">
+          <div class="top-header">
+            <h1>My Journey</h1>
+          </div>
+          <div class="project-container">
+            <div class="project-box">
+              <i class="uil uil-briefcase-alt"></i>
+              <h3>Completed</h3>
+              <label>10+ Finished Projects</label>
+            </div>
+            <div class="project-box">
+              <i class="uil uil-graduation-cap"></i>
+              <h3>Education</h3>
+              <label
+                >BTech at SRM University <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2022-2026)</label
+              >
+            </div>
+            <div class="project-box">
+              <i class="uil uil-award"></i>
+              <h3>Experience</h3>
+              <label>3+ Years in Web Development field</label>
+            </div>
+          </div>
+        </section>
+        <section class="section" id="projects-details">
+          <div class="top-header">
+            <h1>Projects</h1>
+          </div>
+          <div class="project-list">
+            <div class="project-item">
+              <div class="project-content">
+                <div class="project-description">
+                  <h3>Automated Scrutiny Generation and Reset Loan Management</h3>
+                  <p>
+                    Developed a web-based portal for The Andhra Pradesh State Cooperative Bank (APCOB) focused on Automated Scrutiny Generation and Loan Details and Reset Management. The portal digitalizes loan-related information and features dynamic web updates based on user-selected options.
+                  </p>
+                  <a
+                    href="https://github.com/LohithMarneni/Automated-Scrutiny-Generation-And-Loan-Reset-Management"
+                    class="btn"
+                    target="_blank"
+                    >View on GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-item">
+              <div class="project-content">
+                <div class="project-description">
+                  <h3>DiscusPlace - Online Coding Forums</h3>
+                  <p>
+                    Developed a PHP-based coding forums website to help users
+                    resolve technical issues. Manages over 10,000 questions with
+                    MySQL database integration. Features secure password hashing
+                    to minimize hacking risks.
+                  </p>
+                  <a
+                    href="https://github.com/LohithMarneni/DiscusPlace"
+                    class="btn"
+                    target="_blank"
+                    >View on GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Get in touch</h1>
+            <span>Do you have a project in your mind, contact me here</span>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="contact-info">
+                <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                <p>
+                  <i class="uil uil-envelope"></i> Email:
+                  lohith_marneni@srmap.edu.in
+                </p>
+                <p><i class="uil uil-phone"></i> Phone: +91 7396552212</p>
+              </div>
+            </div>
+            <div class="col">
+              <!-- <form id="contact-form" action="send_email.php" method="post"> -->
+              <form id="contact-form" onsubmit="sendEmail(event)">
+                <div class="form-control">
+                  <div class="form-inputs">
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      class="input-field"
+                      placeholder="Your Name"
+                      required
+                    />
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      class="input-field"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                  <textarea
+                    name="message"
+                    id="message"
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                  <div class="form-button">
+                    <button type="submit" class="btn">
+                      Send Message <i class="uil uil-message"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="top-footer">
+          <p>Lohith Marneni</p>
+        </div>
+        <div class="middle-footer">
+          <ul class="footer-menu">
+            <li class="footer_menu_list">
+              <a href="#home">Home</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="#about">About</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="#projects">Projects</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-social-icons">
+          <div class="icon">
+            <a href="https://www.instagram.com/lohith_marneni/"
+              ><i class="uil uil-instagram"></i
+            ></a>
+          </div>
+          <div class="icon">
+            <a href="https://www.linkedin.com/in/lohith-marneni/"
+              ><i class="uil uil-linkedin-alt"></i
+            ></a>
+          </div>
+          <div class="icon">
+            <a href="https://www.facebook.com/profile.php?id=100086997967476"
+              ><i class="uil uil-dribbble"></i
+            ></a>
+          </div>
+          <div class="icon">
+            <a href="https://github.com/LohithMarneni"
+              ><i class="uil uil-github-alt"></i
+            ></a>
+          </div>
+        </div>
+        <div class="bottom-footer">
+          <p>
+            Copyright &copy;<a href="#home" style="text-decoration: none"
+              >Lohith Marneni</a
+            >
+            - All rights reserved
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
