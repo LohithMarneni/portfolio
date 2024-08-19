@@ -7,10 +7,7 @@ Welcome to my personal portfolio website repository. This site showcases my skil
 - [About](#about)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contact](#contact)
-- [License](#license)
+- [Contact](#Contact)
 
 ## About
 
@@ -31,3 +28,7 @@ This is my personal portfolio website built to highlight my skills and projects.
 - **Unicons**: For icons.
 - **Typed.js**: For animated text typing effect.
 - **ScrollReveal**: For scroll animations.
+## Contact
+For any inquiries or feedback, please reach out to me:
+- Email: lohith_marneni@srmap.edu.in
+- Phone: +91 7396552212
