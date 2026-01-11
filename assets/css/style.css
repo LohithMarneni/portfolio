@@ -151,7 +151,7 @@ nav {
   position: relative;
   display: flex;
   height: 100vh;
-  min-height: 700px;
+  min-height: 60vh;
 }
 
 
@@ -160,7 +160,7 @@ nav {
   display: flex;
   justify-content: center;
   align-content: center;
-  min-height: 80vh;
+  min-height: auto;
   flex-direction: column;
   width: 50%;
   padding-left: 20px;
@@ -220,29 +220,50 @@ nav {
 
 .featured-image {
   display: flex;
-  justify-content: right;
-  align-content: center;
-  min-height: 80vh;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  min-height: auto;
   width: 50%;
+  position: relative;
 }
-.image {
-  margin: auto 0;
-  width: 380px;
-  height: 380px;
-  border-radius: 55% 45% 55% 45%;
+/* circular image carousel */
+.image.carousel {
+  width: clamp(180px, 35vw, 380px);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
   overflow: hidden;
-  animation: imgFloat 7s ease-in-out infinite;
+  position: relative;
+  margin: auto 0;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
-.image img {
-  width: 380px;
-  height: 380px;
+.carousel-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Fade carousel: stack images and animate opacity to avoid horizontal clipping */
+.carousel-track img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  object-position: center center;
+  opacity: 0;
+  animation: fadeSlide 15s infinite ease-in-out;
 }
-@keyframes imgFloat {
-  50% {
-    transform: translateY(10px);
-    border-radius: 45% 55% 45% 55%;
-  }
+.carousel-track img:nth-child(1) { animation-delay: 0s; }
+.carousel-track img:nth-child(2) { animation-delay: 5s; }
+.carousel-track img:nth-child(3) { animation-delay: 10s; }
+
+@keyframes fadeSlide {
+  0%   { opacity: 0; transform: scale(1); }
+  5%   { opacity: 1; }
+  30%  { opacity: 1; }
+  35%  { opacity: 0; }
+  100% { opacity: 0; }
 }
 .scroll-btn {
   position: absolute;
@@ -329,7 +350,6 @@ h3 {
 .about-btn button:hover {
   background: var(--first-color-hover);
 }
-
 
 .skills-box {
   margin: 10px;
@@ -726,5 +746,53 @@ footer {
     width: 100%;
     padding: 12px;
     font-size: 18px;
+  }
+}
+
+/* Hero / featured responsive tweaks */
+@media only screen and (max-width: 900px) {
+  .wrapper {
+    padding-inline: 5vw;
+  }
+  .featured-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    height: auto;
+    min-height: auto;
+    padding-block: 3rem;
+  }
+  .featured-text,
+  .featured-image {
+    width: 100%;
+  }
+  .featured-text {
+    padding-left: 0;
+    text-align: center;
+  }
+  .featured-text .social_icons {
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+  .image.carousel {
+    width: clamp(160px, 40vw, 320px);
+  }
+  .featured-name {
+    font-size: clamp(28px, 7vw, 44px);
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .image.carousel {
+    width: clamp(120px, 45vw, 220px);
+  }
+  .featured-name {
+    font-size: 24px;
+  }
+  .nav {
+    padding-inline: 4vw;
+  }
+  .wrapper {
+    padding-inline: 4vw;
   }
 }
